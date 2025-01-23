@@ -2,6 +2,8 @@ import requests
 import json
 from http.server import BaseHTTPRequestHandler
 import os
+
+
 headers = {"Authorization": f"Bearer {os.getenv('HUGGING_FACE_TOKEN')}"}
 API_URL = "https://api-inference.huggingface.co/models/facebook/musicgen-small"
 
